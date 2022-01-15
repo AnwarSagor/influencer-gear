@@ -1,0 +1,232 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1000px;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 21px;
+}
+.start-journey{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    align-items: center;
+}
+.section-title{
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 3px;
+    margin-left: 25px;
+    margin-bottom: 0%;
+}
+.journey-part{
+    padding: 10px;
+    margin: 10px;
+}
+.journey-part h1{
+    font-size: 2.5em;
+    margin-bottom: -05px;
+    font-weight: bolder;
+}
+p{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.book-link{
+    text-decoration: none;
+    background-image: linear-gradient(orange, tomato);
+    padding: 10px 40px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.journey-part:hover p{
+    transform: scale(1.15);
+    transition: transform 0.15s ease-in-out;
+}
+.device-part{
+    margin: 10px;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+.device-part img{
+    width: 100%;
+}
+.device-part:hover img{
+    transform: scale(1.15);
+    transition: transform 0.15s ease-in-out;
+}
+
+/* -------------Popular Collection------------------- */
+/* -------------------------------- */
+.collection-title{
+    text-align: center;
+    font-size: 2em;
+}
+
+.popular-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.container:hover .collection-title{
+    transform: scale(1.15);
+    transition: transform 0.15s ease-in-out;
+}
+.collecton{
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px lightgrey;
+}
+.collecton:hover img{
+    transform: scale(1.10);
+    transition: transform .10s ease-in-out;
+}
+.rating-star{
+    display: flex;
+    align-items: center;
+}
+.rating-mark{
+    margin-left: 10px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.more-link-button{
+    text-align: right;
+}
+.more-link{
+    text-decoration: none;
+    color: tomato;
+    font-weight: 800;
+    text-align: right;
+}
+.product-info:hover h1{
+    transform: scale(1.15);
+    transition: transform 0.15s ease-in-out;
+}
+
+.fa-arrow-right{
+    margin-left: 5px;
+}
+/* ----------------Bonus Section-------------- */
+.mobile-effect{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.mobile-image{
+    margin: 10px;
+}
+.mobile-image img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px lightgrey;
+}
+.mobile-image:hover img{
+    transform: scale(1.10);
+    transition: transform .10s ease-in-out;
+}
+.effect-info{
+    padding: 65px;
+}
+.effect-info h1{
+    font-size: 1.85em;
+    font-weight: bolder;
+    margin-top: 0%;
+}
+.effect-info p{
+    text-align: justify;
+}
+.effect-info:hover p{
+    transform: scale(1.10);
+    transition: transform .10s ease-in-out;
+}
+.details-link{
+    text-decoration: none;
+    background-image: linear-gradient(orange, tomato);
+    padding: 10px 40px;
+    color: white;
+    font-weight: 700;
+}
+/* ------------------footer----------------- */
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-top: 30x;
+}
+footer h2{
+    margin-bottom: 0%;
+    font-weight: 700;
+}
+footer p{
+    margin-bottom: 2px;
+    margin-top: 10px;
+    color: whitesmoke;
+    text-align: center;
+}
+.footer-icon{
+    margin-top: 20px;
+    margin-left: ;
+}
+.footer-icon i{
+    margin: 10px;
+    font-size: 1.25em;
+    color: white;
+}.footer-info span{
+    font-size: .90em;
+}
+
+/* --------------------Meia Quires---------------- 
+-------------------------------------------------- */
+
+/* ------Mobile Devices--------- */
+
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .start-journey, .popular-collection, .mobile-effect{
+       grid-template-columns: repeat(1, 1fr);
+    }
+    .journey-part{
+        order: 2;
+    }
+    
+}
+/* -------------Tablet Devices------------ */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .popular-collection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
